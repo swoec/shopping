@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { Text } from 'react-native';
 import { shallow } from 'enzyme';
 import { View } from 'react-native';
 

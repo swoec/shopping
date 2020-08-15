@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dashboard add to cart correctly 1`] = `
+Array [
+  Object {
+    "id": 1,
+    "name": "Sledgehammer",
+    "price": 125.75,
+  },
+  Array [
+    Object {
+      "id": 1,
+      "name": "Sledgehammer",
+      "price": 125.75,
+    },
+  ],
+]
+`;
+
+exports[`Dashboard add to cart correctly 2`] = `
+Array [
+  Object {
+    "id": 1,
+    "name": "Sledgehammer",
+    "price": 125.75,
+  },
+  Array [
+    Object {
+      "id": 1,
+      "name": "Sledgehammer",
+      "price": 125.75,
+    },
+  ],
+]
+`;
+
+exports[`Dashboard delete to cart correctly 1`] = `Array []`;
+
+exports[`Dashboard delete to cart correctly 2`] = `Array []`;
