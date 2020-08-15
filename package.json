@@ -6,26 +6,73 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "eject": "expo eject",
+    "test": "jest",
     "watch-need-help": "echo 256 | sudo tee -a /proc/sys/fs/inotify/max_user_instances && echo 32768 | sudo tee -a /proc/sys/fs/inotify/max_queued_events && echo 65536 | sudo tee -a /proc/sys/fs/inotify/max_user_watches && watchman shutdown-server"
   },
   "dependencies": {
+    "@react-native-community/toolbar-android": "0.1.0-rc.2",
     "expo": "~38.0.8",
     "expo-status-bar": "^1.0.2",
     "native-base": "^2.8.1",
     "react": "~16.11.0",
-    "react-dom": "~16.11.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-38.0.2.tar.gz",
+    "react-native-vector-icons": "^7.0.0",
     "react-native-web": "~0.11.7",
-    "react-native-vector-icons": "^6.0.0",
     "react-navigation": "^2.17.0",
     "react-redux": "^7.2.1",
     "redux": "^4.0.5"
   },
   "devDependencies": {
     "@babel/core": "^7.8.6",
-    "@types/react": "~16.9.41",
-    "@types/react-native": "~0.62.13",
-    "typescript": "~3.9.5"
+    "@types/enzyme": "^3.10.5",
+    "@types/enzyme-adapter-react-16": "^1.0.6",
+    "@types/jest": "^26.0.9",
+    "@types/react": "^16.9.46",
+    "@types/react-native": "^0.62.18",
+    "@types/react-test-renderer": "^16.9.3",
+    "babel-eslint": "^10.1.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.3",
+    "eslint": "^7.6.0",
+    "eslint-plugin-react": "^7.20.6",
+    "jest": "^26.4.0",
+    "typescript": "^3.9.7",
+    "jest-fetch-mock": "^3.0.3",
+    "react-dom": "^16.11.0",
+    "ts-jest": "^26.2.0"
   },
-  "private": true
+  "private": true,
+  "jest": {
+    "preset": "react-native",
+    "transform": {
+      "^.+\\.js$": "<rootDir>/node_modules/react-native/jest/preprocessor.js",
+      "^.+\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "globals": {
+      "ts-jest": {
+        "tsConfigFile": "tsconfig.jest.json"
+      }
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "testPathIgnorePatterns": [
+      "\\.snap$",
+      "<rootDir>/node_modules/",
+      "<rootDir>/lib/"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ],
+    "modulePaths": [
+      "<rootDir>"
+    ],
+    "setupFiles": [
+      "./tests/setup.js"
+    ],
+    "cacheDirectory": ".jest/cache"
+  }
 }

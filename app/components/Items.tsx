@@ -73,7 +73,7 @@ export default Items;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: "left",
+    alignItems: "flex-start",
     justifyContent: "center",
   },
 });
