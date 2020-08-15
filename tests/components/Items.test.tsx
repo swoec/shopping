@@ -22,8 +22,8 @@ it('renders correctly with defaults', () => {
             quantity:1
         },
     ];
-    // const hello = shallow(<Items products={products}/>);
-    // expect(hello.find(View)).toHaveLength(2);
+    const hello = shallow(<Items products={products}/>);
+    expect(hello.find(View)).toHaveLength(3);
 })
 
 })
