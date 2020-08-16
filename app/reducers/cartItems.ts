@@ -1,4 +1,4 @@
-const cartItems = (state : any = [], action) => {
+const cartItems = (state: any = [], action) => {
   switch (action.type) {
     case "ADD_TO_CART":
       return converter(state, action);
