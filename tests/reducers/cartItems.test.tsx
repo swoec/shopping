@@ -16,6 +16,7 @@ describe("Dashboard", () => {
     let action = { type: "ADD_TO_CART", payload: product };
 
     const newState = cartItems([initialState], action);
+
     expect(newState).toMatchSnapshot();
     // Sending the same id should clean it
     expect(cartItems(newState, action)).toMatchSnapshot();
@@ -31,6 +32,7 @@ describe("Dashboard", () => {
     let action = { type: "REMOVE_FROM_CART", payload: product };
 
     const newState = cartItems([initialState], action);
+
     expect(newState).toMatchSnapshot();
     // Sending the same id should clean it
     expect(cartItems(newState, action)).toMatchSnapshot();

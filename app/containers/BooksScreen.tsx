@@ -4,6 +4,7 @@ import { View, Text, StyleSheet } from "react-native";
 import { products } from "../../Data";
 import Products from "../components/Products";
 import { connect } from "react-redux";
+
 class BooksScreen extends Component {
   public props: any;
   render() {

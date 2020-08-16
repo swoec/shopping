@@ -12,7 +12,6 @@ interface Product {
 class Products extends Component {
   public props: any;
   renderProducts = (products) => {
-    console.log(products);
     return products.map((item, index) => {
       return (
         <View key={index} style={{ padding: 20 }}>
