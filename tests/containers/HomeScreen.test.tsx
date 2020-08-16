@@ -23,9 +23,11 @@ describe("Test Home Screen", () => {
     props = createTestProps({});
     wrapper = shallow(<HomeScreen {...props} />);
   });
+
   it("It should match initial snapshot", () => {
     expect(wrapper).toMatchSnapshot();
   });
+
   it("It should call navigation when button is clicked", () => {
     wrapper
       .find(Button)

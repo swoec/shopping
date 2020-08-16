@@ -12,5 +12,14 @@
     "noImplicitAny": false,
     "strict": true
   },
-  "exclude": ["node_modules", "babel.config.js", "metro.config.js", "jest.config.js"]
+  "exclude": ["node_modules", "babel.config.js", "metro.config.js", "jest.config.js"],
+  "paths": {
+    "@App/*": ["src/*"],
+    "@selectors/*": [ "ts/selectors/*" ],
+    "@actions/*": [ "ts/actions/*" ],
+    "@components/*": [ "ts/components/*" ],
+    "@middleware/*": [ "ts/middleware/*" ],
+    "@store/*": [ "ts/store/*" ],
+    "@reducers/*": [ "ts/reducers/*" ]
+  }
 }

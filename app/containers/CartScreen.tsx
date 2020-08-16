@@ -6,8 +6,6 @@ import Items from "../components/Items";
 class CartScreen extends Component {
   public props: any;
   render() {
-    console.log(this.props.cartItems);
-
     return (
       <View style={styles.container}>
         {this.props.cartItems.length > 0 ? (
