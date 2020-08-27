@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { View, Text, StyleSheet, Button } from "react-native";
 import Icon from "react-native-vector-icons/AntDesign";
+import StripeCheckout from "react-stripe-checkout";
+import {stringify} from "querystring";
 
 interface Product {
   id: string;
@@ -9,9 +11,13 @@ interface Product {
   quantity: number;
 }
 
+let test = 0;
+let prods = [];
+
 class Items extends Component {
   public props: any;
   renderProducts = (products) => {
+    prods = products;
     return products.map((item, index) => {
       return (
         <View key={index} style={{ padding: 20 }}>
@@ -44,6 +50,32 @@ class Items extends Component {
       );
     });
   };
+
+
+  onToken = (token) => {
+    console.log(token);
+    token["amount"] = test;
+    console.log(JSON.stringify(prods));
+    token["description"]= JSON.stringify(prods);
+    const headers = {
+      "Content-Type": "application/json"
+    }
+    fetch("http://localhost:8081/token", {
+      method: "POST",
+      headers: headers,
+      body: JSON.stringify(token)
+    }).then((response) => {
+      response.json().then((data) => {
+        alert(`We are in business, ${data.email}`);
+      });
+    });
+  };
+
+  printToken = (token) => {
+    console.log(token);
+    console.log(token.id);
+  };
+
   renderTotal = (products) => {
     let total = 0;
 
@@ -51,10 +83,23 @@ class Items extends Component {
       total += item.quantity * item.price;
     });
 
+    test = total * 100;
+
     return (
-      <li style={{ marginLeft: "35em" }}>
-        {"Total Spending:" + total.toFixed(2)}
-      </li>
+      <ul style={{ marginLeft: "35em", flexDirection: "column" }}>
+        <li>
+          <span>{"Total Spending:" + total.toFixed(2)}</span>
+        </li>
+
+        <li>
+          <StripeCheckout
+            amount={total * 100}
+            token={this.onToken}
+            description="des"
+            stripeKey="pk_test_51GscWhDnFVse7zZVdt78PkvqV7V3xQujrL8rF39E8eByodrpeONuZ5DvyfVhXhArJ4S0QNkAYj9u5tafnaZPTX0n00yknoKOuT"
+          />
+        </li>
+      </ul>
     );
   };
 

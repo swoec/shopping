@@ -22,7 +22,7 @@ class Products extends Component {
               <Icon
                 onPress={() => this.props.onPress(item)}
                 name="pluscircleo"
-                size={"{50}"}
+                size={20}
                 color="#900"
               />{" "}
             </span>
