@@ -41,7 +41,7 @@ class Items extends Component {
               <Icon
                 onPress={() => this.props.onPress(item)}
                 name="closecircleo"
-                size={"{50}"}
+                size={30}
                 color="#900"
               />
             </span>{" "}
