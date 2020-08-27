@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="177f8376-e152-467c-bc4f-92a7f5222dee" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/components/Items.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Items.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/serverSide/express.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -39,7 +40,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/components/Items.tsx">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
@@ -51,23 +52,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/containers/BooksScreen.tsx">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/serverSide/express.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="54" />
+            <state relative-caret-position="45">
+              <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/components/Products.tsx">
+        <entry file="file://$PROJECT_DIR$/app/containers/BooksScreen.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="15">
+              <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -128,8 +126,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="TypeScript File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -194,6 +192,7 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/app/components/Products.tsx" />
         <option value="$PROJECT_DIR$/app/components/Items.tsx" />
+        <option value="$PROJECT_DIR$/serverSide/express.js" />
       </list>
     </option>
   </component>
@@ -222,23 +221,6 @@
             <path>
               <item name="DoneWithIt" type="b2602c69:ProjectViewProjectNode" />
               <item name="DoneWithIt" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DoneWithIt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DoneWithIt" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DoneWithIt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DoneWithIt" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DoneWithIt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DoneWithIt" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="containers" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -287,18 +269,18 @@
       <workItem from="1597446803519" duration="28655000" />
       <workItem from="1598238330275" duration="19000" />
       <workItem from="1598436245127" duration="10989000" />
-      <workItem from="1598504468508" duration="207000" />
+      <workItem from="1598504468508" duration="515000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68318000" />
+    <option name="totallyTimeSpent" value="68626000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1347" y="25" width="1533" height="875" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2145259" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2145259" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -311,7 +293,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="TypeScript" order="9" weight="0.3297587" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.27882037" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.27882037" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -574,6 +556,13 @@
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serverSide/express.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
         </state>
       </provider>
     </entry>
